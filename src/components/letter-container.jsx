@@ -11,12 +11,26 @@ class LetterContainer extends Component {
     { id: 5, value: "E" },
     { id: 6, value: "Y" }
   ];
+
+  componentDidMount() {
+    console.log("TEST");
+    document.addEventListener("keydown", this.handleEscKey, false);
+  }
+
+  componentWillUnmount() {
+    document.removeEventListener("keydown", this.handleEscKey, false);
+  }
+
   render() {
     return (
       <div className="letter-container">
         {this.contacts.map(c => <Letter key={c.id} value={c.value} />)}
       </div>
     );
+  }
+
+  handleEscKey(event) {
+    console.log(event);
   }
 }
 
