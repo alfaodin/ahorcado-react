@@ -1,0 +1,16 @@
+.letter-container {
+  width: 100%;
+  height: 20%;
+  background-color: lightsalmon;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-flow: nowrap;
+}
+
+.letter {
+  display: inline;
+  background-color: darkgreen;
+  padding: 2rem;
+  flex-basis: content;
+}
