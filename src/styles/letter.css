@@ -3,4 +3,12 @@
   background-color: darkgreen;
   padding: 2rem;
   flex-basis: content;
+  border-bottom: 4px solid black;
+}
+
+.letter  span{
+  color: cornflowerblue;
+}
+.letter.is-on{
+  background-color: yellow;
 }

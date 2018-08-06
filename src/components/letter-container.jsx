@@ -4,16 +4,15 @@ import Letter from "./letter";
 
 class LetterContainer extends Component {
   contacts = [
-    { id: 1, value: "L" },
-    { id: 2, value: "E" },
-    { id: 3, value: "C" },
-    { id: 4, value: "P" },
-    { id: 5, value: "E" },
-    { id: 6, value: "Y" }
+    { id: 1, value: "L", isOn: false },
+    { id: 2, value: "E", isOn: false },
+    { id: 3, value: "C", isOn: true },
+    { id: 4, value: "P", isOn: false },
+    { id: 5, value: "E", isOn: false },
+    { id: 6, value: "Y", isOn: true }
   ];
 
   componentDidMount() {
-    console.log("TEST");
     document.addEventListener("keydown", this.handleEscKey, false);
   }
 
@@ -24,7 +23,7 @@ class LetterContainer extends Component {
   render() {
     return (
       <div className="letter-container">
-        {this.contacts.map(c => <Letter key={c.id} value={c.value} />)}
+        {this.contacts.map(c => <Letter key={c.id} value={c.value} isOn={c.isOn}/>)}
       </div>
     );
   }
