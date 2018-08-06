@@ -1,0 +1,6 @@
+.letter {
+  display: inline;
+  background-color: darkgreen;
+  padding: 2rem;
+  flex-basis: content;
+}

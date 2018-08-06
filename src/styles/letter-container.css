@@ -7,10 +7,3 @@
   justify-content: space-around;
   flex-flow: nowrap;
 }
-
-.letter {
-  display: inline;
-  background-color: darkgreen;
-  padding: 2rem;
-  flex-basis: content;
-}

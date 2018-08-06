@@ -6,11 +6,7 @@ class ImageContainer extends Component {
     title: "test Hello World"
   };
   render() {
-    return (
-      <div className="image-container">
-        <h1>{this.state.title}</h1>
-      </div>
-    );
+    return <div className="image-container" />;
   }
 }
 
