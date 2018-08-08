@@ -3,4 +3,12 @@
   height: 40%;
   align-self: center;
   background-color: lime;
+  display: flex;
+  justify-content: center;
+}
+
+.image{
+  width: 50%;
+  align-self: center;
+  background-position: 0 -45px;
 }
