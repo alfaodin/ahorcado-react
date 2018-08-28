@@ -2,7 +2,14 @@ import React, { Component } from 'react';
 import '../styles/letter.css';
 
 class Letter extends Component {
-  state = { showResults: false };
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      fieldVal: '',
+      showResults: false
+    };
+  }
 
   render() {
     return (
